@@ -192,7 +192,7 @@ Se il toolchain è altrove, imposta la variabile d'ambiente `OO_PS4_TOOLCHAIN` c
 
 ```bat
 cd C:\percorso\OpenOrbis
-git clone https://github.com/<utente>/<repo>.git Nextbots
+git clone https://github.com/Gab8bit/nextbot-ps4.git Nextbots
 ```
 
 ---
