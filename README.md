@@ -15,6 +15,9 @@ Per ogni bot viene salvato il miglior tempo di sopravvivenza in una classifica.
 
 *(Screenshot generati dal test harness su PC con un PNG di prova; sulla console l'immagine è identica, in 1920×1080.)*
 
+> **Vuoi solo giocare?** Scarica il PKG già pronto dalle [Releases](https://github.com/Gab8bit/nextbot-ps4/releases)
+> e segui [Installare e giocare sulla PS4](#7-installare-e-giocare-sulla-ps4). Non serve compilare nulla.
+
 - **Piattaforma**: PS4 con exploit e GoldHEN (homebrew, PKG fake-signed). Non è un gioco ufficiale.
 - **Title ID**: `NBOT00001` — **Content ID**: `IV0000-NBOT00001_00-NEXTBOTPS4000000` — **Versione**: `01.00`
 - **Stato**: compila, genera il PKG e passa 114 test automatici su PC. **Non ancora provato su una PS4 reale**
@@ -280,7 +283,8 @@ I file generati (`eboot.bin`, `*.pkg`, `*.gp4`, `param.sfo`, `build/`) **non** s
 
 ### Installare
 
-1. Copia il `.pkg` su una chiavetta USB (FAT32/exFAT) o mandalo via FTP.
+1. Prendi il `.pkg` dalle [Releases](https://github.com/Gab8bit/nextbot-ps4/releases) (o compilalo, sezione 5) e
+   copialo su una chiavetta USB (FAT32/exFAT) o mandalo via FTP.
 2. Sulla PS4 con GoldHEN installalo con *Debug Settings → Game → Package Installer* (o con il Package Installer
    di GoldHEN).
 3. Avvia **Nextbot** dalla home.
