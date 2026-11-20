@@ -20,8 +20,7 @@ Per ogni bot viene salvato il miglior tempo di sopravvivenza in una classifica.
 
 - **Piattaforma**: PS4 con exploit e GoldHEN (homebrew, PKG fake-signed). Non è un gioco ufficiale.
 - **Title ID**: `NBOT00001` — **Content ID**: `IV0000-NBOT00001_00-NEXTBOTPS4000000` — **Versione**: `01.00`
-- **Stato**: compila, genera il PKG e passa 114 test automatici su PC. **Non ancora provato su una PS4 reale**
-  (vedi [Cose da verificare sulla console](#cose-da-verificare-sulla-console)).
+- **Stato**: **testato su una PS4 reale con GoldHEN: funziona.** Passa anche 114 test automatici su PC.
 
 ---
 
@@ -350,16 +349,6 @@ AddressSanitizer e UndefinedBehaviorSanitizer, ed esegue `tools/host_main.cpp`. 
   esempio `nc <ip-ps4> 3232`).
 - A schermo: un PNG non valido appare in lista come *immagine non valida*; un WAV non valido fa partire il bot muto,
   con un avviso rosso nei primi secondi; se le cartelle non si possono creare, la schermata *Scegli il bot* lo dice.
-
-### Cose da verificare sulla console
-
-Il codice PS4 è ricalcato su un progetto che gira su hardware reale (stesse inizializzazioni di video, pad e
-audio). Questi punti però non sono ancora stati provati:
-
-- che l'app possa creare e scrivere `/data/nextbot` (se no, le cartelle vanno create a mano via FTP);
-- la scansione delle cartelle (`opendir/readdir`; su PS4 c'è un ripiego con `sceKernelGetdents`);
-- la lettura del nome utente (se fallisce compare `Player`);
-- la fluidità reale a 60 fps.
 
 ### orbis-pub-chk
 
